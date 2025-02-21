@@ -17,8 +17,8 @@
 3.Inside this folder, create the following files:
 
 main.tf
-'
-provider "aws" {
+
+'provider "aws" {
   region = var.aws_region
 }
 
