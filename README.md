@@ -108,6 +108,7 @@ pipeline {
 ## Deploy the Application on EKS
 
 Created deployment and service file for both Frontend and Backend
+
 frontend
 ```
 apiVersion: apps/v1
