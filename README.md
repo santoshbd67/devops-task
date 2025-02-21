@@ -25,6 +25,8 @@ terraform validate
 terraform plan
 terraform apply -auto-approve
 ```
-  
+
+  ## Application Frontend and Backend Setup
+Note: I manually deployed a sample Node.js application on my local machine to build the source code. After that, I created a GitHub repository containing the source code for both the frontend and backend. This repository was then used for building and deploying the application on AWS EKS. Additionally, I integrated a Jenkins pipeline for automating the build and deployment process.
 
 
