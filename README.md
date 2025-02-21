@@ -15,9 +15,9 @@
 2.Create a new folder: terraform-aws-poc.
 
 3.clone the repo
-
-"
+```
   git clone https://github.com/santoshbd67/infrastructure.git
-  "
+```
+  
 
 
