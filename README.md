@@ -105,6 +105,43 @@ pipeline {
 
 <img width="944" alt="devops taks CI" src="https://github.com/user-attachments/assets/64ba5110-3ff2-40fb-8c8d-5e9160f5309b" />
 
-Jenkinsfile (jenkins pipeline for the CD)
+## Deploy the Application on EKS
+
+Created deployment and service file for both Frontend and Backend
+frontend
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dummy-data-ui
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dummy-data-ui
+  template:
+    metadata:
+      labels:
+        app: dummy-data-ui
+    spec:
+      containers:
+        - name: dummy-data-ui
+          image: <your-ecr-uri>/dummy-data-ui:latest
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dummy-data-ui-service
+spec:
+  selector:
+    app: dummy-data-ui
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
+```
 
 
