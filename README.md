@@ -17,7 +17,7 @@
 3.Inside this folder, create the following files:
 
 main.tf
-'''
+'
 provider "aws" {
   region = var.aws_region
 }
@@ -148,4 +148,4 @@ resource "aws_instance" "data_generate" {
     Name = var.instance_name
   }
 } 
-'''
+'
