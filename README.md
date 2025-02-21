@@ -22,7 +22,7 @@ provider "aws" {
   region = var.aws_region
 }
 
-# VPC
+
 resource "aws_vpc" "data_generate" {
   cidr_block = var.vpc_cidr
   tags = {
@@ -30,7 +30,7 @@ resource "aws_vpc" "data_generate" {
   }
 }
 
-# Public Subnet
+
 resource "aws_subnet" "data_generate" {
   vpc_id                  = aws_vpc.data_generate.id
   cidr_block              = var.subnet_cidr
@@ -41,7 +41,7 @@ resource "aws_subnet" "data_generate" {
   }
 }
 
-# Internet Gateway
+
 resource "aws_internet_gateway" "data_generate" {
   vpc_id = aws_vpc.data_generate.id
   tags = {
@@ -49,7 +49,7 @@ resource "aws_internet_gateway" "data_generate" {
   }
 }
 
-# Route Table
+
 resource "aws_route_table" "data_generate" {
   vpc_id = aws_vpc.data_generate.id
 
@@ -63,13 +63,13 @@ resource "aws_route_table" "data_generate" {
   }
 }
 
-# Associate Route Table with Subnet
+
 resource "aws_route_table_association" "data_generate" {
   subnet_id      = aws_subnet.data_generate.id
   route_table_id = aws_route_table.data_generate.id
 }
 
-# Security Group
+
 resource "aws_security_group" "data_generate" {
   name        = "${var.instance_name}-sg"
   description = "Allow SSH, HTTP, and app port"
@@ -97,7 +97,7 @@ resource "aws_security_group" "data_generate" {
   }
 }
 
-# EC2 Instance
+
 resource "aws_instance" "data_generate" {
   ami                    = var.ami_id
   instance_type          = var.instance_type
