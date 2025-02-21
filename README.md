@@ -7,3 +7,11 @@
 2.AWS Toolkit – Helps with AWS authentication and resource management.
 
 3.Remote - SSH – For SSH access within VSCode (optional).
+
+## Step 1: Setup Terraform Project in VSCode
+
+1.Open VSCode.
+
+2.Create a new folder: terraform-aws-poc.
+
+3.Inside this folder, create the following files:
