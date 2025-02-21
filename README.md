@@ -8,7 +8,7 @@
 
 3.Remote - SSH – For SSH access within VSCode (optional).
 
-## Step 1: Setup Terraform Project in VSCode
+## Infrastructure setup
 
 1.Open VSCode.
 
