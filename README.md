@@ -109,7 +109,7 @@ pipeline {
 
 Created deployment and service file for both Frontend and Backend
 
-frontend
+Frontend
 ```
 apiVersion: apps/v1
 kind: Deployment
@@ -145,4 +145,39 @@ spec:
   type: LoadBalancer
 ```
 
+Backend
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dummy-data-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dummy-data-api
+  template:
+    metadata:
+      labels:
+        app: dummy-data-api
+    spec:
+      containers:
+        - name: dummy-data-api
+          image: <your-ecr-uri>/dummy-data-api:latest
+          ports:
+            - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dummy-data-api-service
+spec:
+  selector:
+    app: dummy-data-api
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
+  type: ClusterIP
+```
 
