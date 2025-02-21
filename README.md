@@ -32,7 +32,7 @@ Note: I manually deployed a sample Node.js application on my local machine to bu
 ## Installed Jenkins and Integrated with Tools
 The Terraform code mentioned in the Infrastructure Setup section installs Jenkins while deploying the infrastructure. After deployment, I connected to the Jenkins server, installed the required plugins, and integrated the necessary tools. Additionally, I added the required credentials for the Jenkins pipeline and created a CI job in Jenkins, which was then successfully built.
 
- Jenkinsfile
+ Jenkinsfile (jenkins pipeline for the CI)
  ```
 pipeline {
     agent any
@@ -104,5 +104,7 @@ pipeline {
 
 
 <img width="944" alt="devops taks CI" src="https://github.com/user-attachments/assets/64ba5110-3ff2-40fb-8c8d-5e9160f5309b" />
+
+Jenkinsfile (jenkins pipeline for the CD)
 
 
