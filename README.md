@@ -14,9 +14,16 @@
 
 2.Create a new folder: terraform-aws-poc.
 
-3.clone the repo
+3.Clone the repository in vscode
 ```
   git clone https://github.com/santoshbd67/infrastructure.git
+```
+4.Run 
+```
+terraform init
+terraform validate
+terraform plan
+terraform apply -auto-approve
 ```
   
 
