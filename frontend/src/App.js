@@ -10,7 +10,7 @@ function App() {
   const fetchData = async () => {
     try {
       setError(""); // Clear previous errors
-      const response = await axios.get(`http://54.196.233.111:3000/generate`, {  ## change the public ip address
+      const response = await axios.get(`http://54.224.164.126:3000/generate`, {  ## change the public ip address
         params: { fields, count },
       });
       setData(response.data.data);
