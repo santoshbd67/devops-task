@@ -29,4 +29,6 @@ terraform apply -auto-approve
   ## Application Frontend and Backend Setup
 Note: I manually deployed a sample Node.js application on my local machine to build the source code. After that, I created a GitHub repository containing the source code for both the frontend and backend. This repository was then used for building and deploying the application on AWS EKS. Additionally, I integrated a Jenkins pipeline for automating the build and deployment process.
 
+## Installed Jenkins and Integrated with Tools
+The Terraform code mentioned in the Infrastructure Setup section installs Jenkins while deploying the infrastructure. After deployment, I connected to the Jenkins server, installed the required plugins, and integrated the necessary tools. Additionally, I added the required credentials for the Jenkins pipeline and created a CI job in Jenkins, which was then successfully built.
 
