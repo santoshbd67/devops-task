@@ -2,8 +2,8 @@
 
 #### Install VSCode Extensions
 
-Terraform (by HashiCorp) – Provides syntax highlighting and formatting.
+1.Terraform (by HashiCorp) – Provides syntax highlighting and formatting.
 
-AWS Toolkit – Helps with AWS authentication and resource management.
+2.AWS Toolkit – Helps with AWS authentication and resource management.
 
-Remote - SSH – For SSH access within VSCode (optional).
+3.Remote - SSH – For SSH access within VSCode (optional).
