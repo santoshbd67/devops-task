@@ -190,3 +190,9 @@ kubectl get svc
 
 Get the external ip of loadbalancer and access the application
 
+
+<img width="951" alt="task2" src="https://github.com/user-attachments/assets/02a0bdd0-e6db-416f-ace5-436cda65f339" />
+
+<img width="950" alt="taks3" src="https://github.com/user-attachments/assets/29b039b2-93c5-496d-8b07-3a70ae813801" />
+
+
