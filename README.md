@@ -196,3 +196,19 @@ Get the external ip of loadbalancer and access the application
 <img width="950" alt="taks3" src="https://github.com/user-attachments/assets/29b039b2-93c5-496d-8b07-3a70ae813801" />
 
 
+## Gitgub Repo
+Github repo for application
+```
+https://github.com/santoshbd67/devops-task.git
+```
+Github for infrastructure
+```
+https://github.com/santoshbd67/infrastructure.git
+```
+Github for EKS creation
+```
+https://github.com/santoshbd67/Terraform_eks.git
+```
+
+
+
