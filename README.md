@@ -181,3 +181,12 @@ spec:
   type: ClusterIP
 ```
 
+### Run the following commands to deploy the application
+```
+kubectl apply -f frontend-deploy.yml
+kubectl apply -f backend-deploy.yml
+kubectl get svc
+```
+
+Get the external ip of loadbalancer and access the application
+
